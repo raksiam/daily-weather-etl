@@ -40,4 +40,6 @@ try:
 finally:
     cs.close()
     conn.close()
+
+    
     print("✅ Data successfully loaded into Snowflake!")

@@ -1,6 +1,6 @@
 city,temperature,humidity,weather,timestamp
-Mumbai,27.57,83,moderate rain,2025-05-20T17:49:03.885071
-Delhi,34.05,52,haze,2025-05-20T17:49:04.088385
-Bengaluru,21.39,93,drizzle,2025-05-20T17:49:04.223668
-Pune,27.15,69,overcast clouds,2025-05-20T17:49:04.350297
-Nagpur,31.01,55,haze,2025-05-20T17:49:04.537060
+Mumbai,30.99,62,haze,2025-05-21T12:06:04.544608
+Delhi,40.05,33,haze,2025-05-21T12:06:04.560668
+Bengaluru,24.46,74,scattered clouds,2025-05-21T12:06:04.578430
+Pune,27.32,68,broken clouds,2025-05-21T12:06:04.596519
+Nagpur,39.01,32,haze,2025-05-21T12:06:04.613213
