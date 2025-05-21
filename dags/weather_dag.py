@@ -21,7 +21,7 @@ def run_dbt():
     ], check=True)
 
 default_args = {
-    'owner': 'rakshanda',
+    'owner': '<your_name>',
     'start_date': days_ago(1),
     'retries': 1,
 }
@@ -43,12 +43,12 @@ with DAG(
     load_task = BashOperator(
         task_id='load_to_snowflake',
         bash_command=f"""
-            export SNOWFLAKE_USER='raks254' && \
-            export SNOWFLAKE_PASSWORD='Raks@123456789' && \
-            export SNOWFLAKE_ACCOUNT='fkbvxmp-pq95496' && \
-            export SNOWFLAKE_WAREHOUSE='COMPUTE_WH' && \
-            export SNOWFLAKE_DATABASE='WEATHER_DB' && \
-            export SNOWFLAKE_SCHEMA='WEATHER_SCHEMA' && \
+            export SNOWFLAKE_USER='<username>' && \
+            export SNOWFLAKE_PASSWORD='<password>' && \
+            export SNOWFLAKE_ACCOUNT='<account>' && \
+            export SNOWFLAKE_WAREHOUSE='<warehouse>' && \
+            export SNOWFLAKE_DATABASE='<database>' && \
+            export SNOWFLAKE_SCHEMA='<schema>' && \
             python {LOAD_SCRIPT_PATH}
         """
     )
