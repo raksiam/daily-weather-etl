@@ -33,4 +33,4 @@ weather_df = pd.DataFrame(results)
 print(weather_df)
 
 # Optional: Save to CSV or JSON
-weather_df.to_csv("/Users/rakshandahedaoo/Desktop/daily-weather-etl/weather_output.csv", index=False)
+weather_df.to_csv("/Users/<your_name>/Desktop/daily-weather-etl/weather_output.csv", index=False)

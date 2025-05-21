@@ -5,16 +5,16 @@ from airflow.utils.dates import days_ago
 import subprocess
 
 # Replace with your actual file paths
-FETCH_SCRIPT_PATH = "/Users/rakshandahedaoo/Desktop/daily-weather-etl/scripts/fetch_weather.py"
-LOAD_SCRIPT_PATH = "/Users/rakshandahedaoo/Desktop/daily-weather-etl/scripts/load_to_snowflake.py"
-DBT_PROJECT_PATH = "/Users/rakshandahedaoo/Desktop/daily-weather-etl/dbt/weather_dbt"
+FETCH_SCRIPT_PATH = "/Users/<your_name>/Desktop/daily-weather-etl/scripts/fetch_weather.py"
+LOAD_SCRIPT_PATH = "/Users/<your_name>/Desktop/daily-weather-etl/scripts/load_to_snowflake.py"
+DBT_PROJECT_PATH = "/Users/<your_name>/Desktop/daily-weather-etl/dbt/weather_dbt"
 
 def run_fetch():
-    subprocess.run(['/Users/rakshandahedaoo/Desktop/daily-weather-etl/venv/bin/python', FETCH_SCRIPT_PATH], check=True)
+    subprocess.run(['/Users/<your_name>/Desktop/daily-weather-etl/venv/bin/python', FETCH_SCRIPT_PATH], check=True)
 
 def run_dbt():
     subprocess.run([
-        '/Users/rakshandahedaoo/Desktop/daily-weather-etl/venv/bin/dbt',
+        '/Users/<your_name>/Desktop/daily-weather-etl/venv/bin/dbt',
         'run',
         '--project-dir',
         DBT_PROJECT_PATH
